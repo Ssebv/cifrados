@@ -18,11 +18,11 @@ B = (g ** b) % p
 # Intercambio de las claves públicas A y B
 
 # Parte A calcula la clave compartida
-clave_compartida_A = (B ** a) % p
+K1 = (B ** a) % p
 
 # Parte B calcula la clave compartida
-clave_compartida_B = (A ** b) % p
+K2= (A ** b) % p
 
 # Ambas partes ahora tienen la misma clave compartida
-print("Clave compartida A:", clave_compartida_A)
-print("Clave compartida B:", clave_compartida_B)
+print("Clave compartida A:", K1)
+print("Clave compartida B:", K2)
